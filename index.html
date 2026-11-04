@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>Espetinho do Beto | Links Úteis</title>
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  
+  <!-- Font Awesome para Ícones -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Fonte Google Fonts (Poppins) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    /* Animação suave de fundo em tons de azul */
+    @keyframes dynamicBg {
+      0% { background-position: 0% 50%; }
+      50% { background-position: 100% 50%; }
+      100% { background-position: 0% 50%; }
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      -webkit-tap-highlight-color: transparent;
+      background: linear-gradient(-45deg, #020617, #0f172a, #1e1b4b, #0369a1, #0f172a);
+      background-size: 400% 400%;
+      animation: dynamicBg 14s ease infinite;
+    }
+    
+    /* Cor do fundo ao selecionar texto */
+    ::selection {
+      background-color: #3b82f6 !important;
+      color: #ffffff !important;
+    }
+  </style>
+</head>
+<body class="text-white min-h-[100dvh] flex flex-col justify-between p-4 selection:bg-blue-500 selection:text-white antialiased">
+
+  <!-- Container Principal -->
+  <main class="w-full max-w-sm mx-auto my-auto flex flex-col items-center text-center py-4">
+    
+    <!-- Avatar / Foto de Perfil (Carregando 'logo.jpg') -->
+    <div class="relative mb-4 flex items-center justify-center">
+      <!-- Efeito de Brilho Neon -->
+      <div class="absolute -inset-1 bg-gradient-to-r from-blue-500 via-cyan-400 to-indigo-500 rounded-full blur-md opacity-80 animate-pulse"></div>
+      
+      <!-- Moldura do Avatar -->
+      <div class="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-gradient-to-tr from-blue-600 via-cyan-400 to-indigo-600 shadow-2xl">
+        <img src="./Design sem nome.png" 
+             alt="Espetinho do Beto" 
+             class="w-full h-full rounded-full object-cover object-center border-2 border-slate-950 shadow-inner"
+             onerror="this.src='./Design sem nome.png'"> <!-- Caso o formato baixado seja .png -->
+      </div>
+    </div>
+
+    <!-- Título e Subtítulo -->
+    <h1 class="text-xl sm:text-2xl font-extrabold tracking-wide text-white flex items-center justify-center gap-2">
+      Espetinho do Beto <i class="fa-solid fa-fire text-blue-400"></i>
+    </h1>
+    <p class="text-xs sm:text-sm text-slate-300/90 mt-1 mb-6 px-2">
+      O melhor churrasquinho da cidade! 🍢🔥<br>Qualidade, sabor e atendimento especial.
+    </p>
+
+    <!-- Lista de Links -->
+    <div class="w-full space-y-3 px-1">
+
+      <!-- WhatsApp (Fazer Pedido) -->
+      <a href="https://wa.me/message/DBZ4GL3Z2PNXM1" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="group relative w-full flex items-center justify-between p-3.5 sm:p-4 bg-gradient-to-r from-green-600 to-emerald-600 rounded-2xl shadow-lg active:scale-95 transition-all duration-150 touch-manipulation">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center text-white text-xl shrink-0">
+            <i class="fa-brands fa-whatsapp"></i>
+          </div>
+          <div class="text-left">
+            <span class="block font-bold text-white text-sm sm:text-base leading-tight">Fazer Pedido no WhatsApp</span>
+            <span class="block text-[11px] sm:text-xs text-green-100 mt-0.5">Atendimento e Entregas</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-white/70 text-sm group-active:translate-x-1 transition-transform"></i>
+      </a>
+
+      <!-- Site / Cardápio -->
+      <a href="https://pedido.anota.ai/loja/espetinho-do-beto-3?f=msa" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="group w-full flex items-center justify-between p-3.5 sm:p-4 bg-slate-900/80 backdrop-blur-md border border-slate-700/60 rounded-2xl shadow-md active:bg-slate-800 active:scale-95 transition-all duration-150 touch-manipulation">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <div class="text-left">
+            <span class="block font-bold text-white text-sm sm:text-base leading-tight">Nosso Site / Cardápio</span>
+            <span class="block text-[11px] sm:text-xs text-slate-400 mt-0.5">Veja nossas opções e preços</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-slate-500 text-sm group-active:translate-x-1 transition-transform"></i>
+      </a>
+
+      <!-- Instagram -->
+      <a href="https://instagram.com/espetinhodobetoariquemes" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="group w-full flex items-center justify-between p-3.5 sm:p-4 bg-slate-900/80 backdrop-blur-md border border-slate-700/60 rounded-2xl shadow-md active:bg-slate-800 active:scale-95 transition-all duration-150 touch-manipulation">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-gradient-to-tr from-amber-500 via-rose-500 to-purple-600 flex items-center justify-center text-white text-xl shrink-0">
+            <i class="fa-brands fa-instagram"></i>
+          </div>
+          <div class="text-left">
+            <span class="block font-bold text-white text-sm sm:text-base leading-tight">Siga no Instagram</span>
+            <span class="block text-[11px] sm:text-xs text-slate-400 mt-0.5">@espetinhodobetoariquemes</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-slate-500 text-sm group-active:translate-x-1 transition-transform"></i>
+      </a>
+
+      <!-- Ligação Telefônica -->
+      <a href="tel:+5569999800937" 
+         class="group w-full flex items-center justify-between p-3.5 sm:p-4 bg-slate-900/80 backdrop-blur-md border border-slate-700/60 rounded-2xl shadow-md active:bg-slate-800 active:scale-95 transition-all duration-150 touch-manipulation">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-blue-500/20 text-blue-400 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-phone"></i>
+          </div>
+          <div class="text-left">
+            <span class="block font-bold text-white text-sm sm:text-base leading-tight">Ligar Agora</span>
+            <span class="block text-[11px] sm:text-xs text-slate-400 mt-0.5">(69) 99980-0937</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-slate-500 text-sm group-active:translate-x-1 transition-transform"></i>
+      </a>
+
+      <!-- Localização no Google Maps -->
+      <a href="https://maps.google.com/?q=Rua+Santa+Catarina,+4094+-+Setor+05" 
+         target="_blank" 
+         rel="noopener noreferrer"
+         class="group w-full flex items-center justify-between p-3.5 sm:p-4 bg-slate-900/80 backdrop-blur-md border border-slate-700/60 rounded-2xl shadow-md active:bg-slate-800 active:scale-95 transition-all duration-150 touch-manipulation">
+        <div class="flex items-center space-x-3">
+          <div class="w-10 h-10 rounded-xl bg-cyan-500/20 text-cyan-400 flex items-center justify-center text-xl shrink-0">
+            <i class="fa-solid fa-location-dot"></i>
+          </div>
+          <div class="text-left">
+            <span class="block font-bold text-white text-sm sm:text-base leading-tight">Como Chegar</span>
+            <span class="block text-[11px] sm:text-xs text-slate-400 mt-0.5">Rua Santa Catarina, 4094 - Setor 05</span>
+          </div>
+        </div>
+        <i class="fa-solid fa-chevron-right text-slate-500 text-sm group-active:translate-x-1 transition-transform"></i>
+      </a>
+
+    </div>
+
+    <!-- Informações de Atendimento -->
+    <div class="mt-6 text-[11px] sm:text-xs text-slate-300/80 space-y-1.5 px-2">
+      <p class="flex items-center justify-center gap-1.5">
+        <i class="fa-regular fa-clock text-blue-400"></i> Quinta a Terça - 18:30h às 23:00h
+      </p>
+    </div>
+
+  </main>
+
+  <!-- Rodapé -->
+  <footer class="text-center text-[11px] text-slate-400 py-2">
+    <p>© Espetinho do Beto. Todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
